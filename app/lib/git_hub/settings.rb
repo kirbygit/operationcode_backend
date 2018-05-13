@@ -37,6 +37,10 @@ module GitHub
       Rails.application.secrets.git_hub_client_secret
     end
 
+    def self.o_auth_2_token
+      Rails.application.secrets.git_hub_oauth_token
+    end
+
     # There are three ways to authenticate through GitHub's API v3.
     # Choices are: BASIC, O_AUTH_2_TOKEN, or O_AUTH_2_KEY_SECRET.
     #
